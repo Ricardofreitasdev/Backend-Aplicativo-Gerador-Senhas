@@ -16,7 +16,7 @@ async function formatEmail(user){
         from: process.env.MAIL_USER,
         to: user.email,
         subject: `Seja bem vindo ${user.name}`,
-        html: '<p>você ganhou <span>10%</span> de desconto</p>'
+        html: ''
     }
 
     return emailFormatado
